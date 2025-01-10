@@ -11,17 +11,16 @@ void bubbleSortArray(int Arr[], int iSize)
     {
         for(jCnt = 0; jCnt < iSize - iCnt -1; jCnt++)
         {
-            if(Arr[jCnt] > Arr[jCnt+1])
+            if(Arr[jCnt] > Arr[jCnt + 1])
             {
                 temp = Arr[jCnt];
-                Arr[jCnt] = Arr[jCnt+1];
+                Arr[jCnt] = Arr[jCnt + 1];
                 Arr[jCnt+1] = temp;
             }
         }
     }
 
     printf("\n");
-
     for(iCnt = 0; iCnt < iSize; iCnt++)
     {
         printf("%d ", Arr[iCnt]);
